@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 const Navbar = () => {
   return (
     <div className="wrapper no-padding">
@@ -12,8 +12,8 @@ const Navbar = () => {
             <li className="exit" id="exit-btn">
                 <button><img src="../../assets/exit.svg" alt=''/></button>
             </li>
-            <li className="active"><Link to="/">Home</Link></li>
-            <li><Link to="about">About</Link></li>
+            <li className="active"><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="about">About</NavLink></li>
           </ul>
         </nav>
       </header>
